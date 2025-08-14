@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Booking Form</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" intergrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdk2K2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+<!-- Navbar-->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top navbar-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Munirah Travel & Tours</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Munirah/home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SAFARIS & TOURS
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="day-trip.html  ">Days Trips & Tours</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="2days.html   ">2 Days Small Group Safari</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="3day.html">3 Days Short Tanzania Safari</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="4day.html ">4 Days Safari Highlight</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="6day.html">6 Days Tanzania Classic Safari</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="7day.html">7 Days Tanzania Big 5 Safari</a>
+                            <div class="dropdown-divider"></div>  
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DESTINATION
+                        </a> 
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="serengeti.html">Serengeti National Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="ngorongoro.html">Ngorongoro crates</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="lake-manyara.html">Lake Manyara National Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Tarangire.html">Tarangire Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="arusha.html">Arusha National Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="kilimanjaro.html">Kilimanjaro National Park</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact-us.html">CONTACT US</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- end of Navbar-->
+<!-- Hero Start -->
+  <div class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="hero-content">
+            <h1 class="text-light p-3 pb-4" style="--bs-bg-opacity: .5;">4 Days Tanzania Safari:Highlight</h1>
+        </div> 
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 custom-80">
+                    <div class="p-3  text-dark"><h1>Safari & Tours Overview</h1>
+                        <p>Embark on a breathtaking journey through the heart of Tanzania's wildlife with the 4 Days Safari Ngorongoro,Tarangire,and Serengri safari .This is incledible adventure will take you to the most iconic national paeks in the country ,whwre you'll have the opportunity to witness the wonders of nature up close and personal. </p>  </p>
+                        <p>From yhe vast plains of the Serengeti to the magnificient Ngorongoro Crater and the lush landscapes of Tarangire,this safari promises an unforgetable experinces.Join us as we delve into  the details of this remarkable adventure and discover why it should be at the top of your travel bucket list. </p>
+                        <h3>Exploring Tanzania's Wildlife Gems</h3> 
+                        <p>  On this 4-day safari, you will have the chance to explore three of Tanzania's most renowned national parks: Ngorongoro, Tarangire, and Serengeti. Each park offers a unique and diverse ecosystem, providing an extraordinary opportunity to encounter a wide array of wildlife in their natural habitats. <hr></p> 
+                    </div>
+                    <div class="accordion" id="itineraryAccordion">
+                        <h1>Detailed Itinerary</h1>
+                        <!-- day 1-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                                    Day 1:Arusha City-Tarangire National Park
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p>Pick up at 8:30 am from your hotel in Arusha and depart for Tarangire National Park with a picnic lunch for a full day's game drive. Tanzania's third-largest national park is known for its majestic baobab trees that dot the landscape, dwarfing the animals that feed beneath them.</p>
+                                    <p>The Tarangire River is the centerpiece of this park which is famous for some of the largest herds of elephants in Africa.</p>
+                                    <p>Here you may see lion, leopard, cheetah, lesser kudu, buffalo, oryx, eland, giraffe, and zebra.</p>
+                                    <p>Post the game drive, you will head back to your camp/lodge where a delicious dinner awaits you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- day 2-->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Day 2:Tarangire National Park- Central Serengeti
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                        <div class="accordion-body">
+                                            <p> After finishing up a good breakfast, you will head out towards the Serengeti National Park and travel in the midst of the never-ending plain grasslands. The Serengeti is arguably the most impressive wildlife sanctuary in the world.</p>
+                                            <p>You will have an afternoon game drive in the endless plains of the Serengeti for a chance to see the great herds of wildebeest, zebras, and gazelles or a pride of lions lounging in the shade.</p>
+                                            <p>A picnic lunch will be done during the day-long game drive itself. The eventful day comes to an end with a heavy dinner and a good night's rest in your accommodation.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- day 3-->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Day 3:Serengeti National Park- Ngorongoro
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                        <div class="accordion-body">
+                                            <p>After breakfast, you will have a morning game drive in Serengeti National Park. Later depart for Ngorongoro Conservation Area with a picnic lunch.</p>
+                                            <p>Ngorongoro Crater is the largest collapsed volcanic crater in the world and has 14 km of isolated natural beauty.</p>
+                                            <p>Ngorongoro Crater is surrounded by a ring of extinct volcanoes and the floor, dotted with watering holes, shelters some 30,000 animals.</p>
+                                            <p>The eventful day comes to an end with a heavy dinner and a good night's rest in your accommodation.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- day 4-->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfour">
+                                    <button class="accordion-button collapsed custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour">
+                                        Day 4:Ngorongoro Crater Tour(5 hours)-Arusha
+                                    </button>
+                                </h2>
+                                <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                        <div class="accordion-body">
+                                            <p>On the last day of your safari, you will have an early start. Finishing up with a quick breakfast you will make an early descent at around 6:30 am into the crater floor.</p>
+                                            <p>The Ngorongoro Crater is the world's largest inactive, intact, and unfilled volcanic caldera. It has a massive floor of about 260 sq km with a depth of over 2000 feet. The 5-hour game drive on the crater floor will show you a lot of animal action.</p>
+                                            <p>Keeping the camera ready is definitely recommended. The African elephant, buffalo, black rhino, hippos, hyenas, cheetahs, and lions are found in plenty.</p>
+                                            <p>Post the picnic lunch at the beautiful hippo pool, you will begin a steep ascend to the top exit of the crater. This is the last leg of your safari, with a 4hr drive left to Arusha.</p>
+                                            <p>You will be dropped off at your preferred location in Arusha by 6:00 pm in the evening. With an incredible experience and loads of memories to cherish, this is the time you bid goodbye to your team.</p>     
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                        <div>
+                            <hr>
+                            <h1>Included/Exclude</h1>
+                            <div class="row">
+                                <div class="col-6 custom-40">
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi bi-check"></i> All accommodations per itinerary</li>
+                                        <li><i class="bi bi-check"></i>All meals per itinerary</li>
+                                        <li><i class="bi bi-check"></i>All tours and entrance fees per itinerary</li>
+                                        <li><i class="bi bi-check"></i>All transportation and transfers per itinerary</li>
+                                        <li><i class="bi bi-check"></i>Professional English speaking naturalist driver/guide</li>
+                                        <li><i class="bi bi-check"></i>Transportation in a custom safari 4x4 with a popup roof</li>
+                                        <li><i class="bi bi-check"></i>>Safari vehicles have an inverter for charging batteries</li>
+                                        <li><i class="bi bi-check"></i>Communication radio</li>
+                                        <li><i class="bi bi-check"></i>Electric cooler and filtered water</li>
+                                        <li><i class="bi bi-check"></i>National Park gate fees</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 custom-40">
+                                    <ul class="list-unstyled">
+                                            <li><i class="bi bi-x"></i>International and domestic flights</li>
+                                            <li><i class="bi bi-x"></i>Meals not listed</li>
+                                            <li><i class="bi bi-x"></i>Bevrages and local</li>
+                                            <li><i class="bi bi-x"></i>Tips for guides, drivers,hotel staff</li>
+                                            <li><i class="bi bi-x"></i>Optional tours</li>
+                                            <li><i class="bi bi-x"></i>Single room Supplement</li>
+                                            <li><i class="bi bi-x"></i>Personal expenses</li>
+                                            <li><i class="bi bi-x"></i>Drinks and extras bottled water</li>
+                                            <li><i class="bi bi-x"></i>Optional tours (Olduvai Gorge and Maasai Village)</li>
+                                            <li><i class="bi bi-x"></i>Discount for kids under 15 years old</li>
+                                    </ul>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                </div>   
+             <div class="col-4 custom-20">
+                    <div class="card"  style="margin-bottom: 10px; padding:25px;">
+                        <h3 class="text-center mb-4 fw-bold">Book This Tour<hr></h3>
+                        <!--form start-->   
+                        <form>
+                            <div class="mb-3">       
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="whatsapp" class="form-label">WhatsApp</label>
+                                    <input type="text" class="form-control" id="whatsapp" placeholder="Enter WhatsApp number">
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <label for="country" class="form-label">Country</label>
+                                    <input type="text" class="form-control" id="country" placeholder="Enter country">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter city">
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <label for="adult" class="form-label">No. Adult</label>
+                                    <input type="number" class="form-control" id="adult" min="0" placeholder="Number of adults">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="child" class="form-label">No. of Child</label>
+                                    <input type="number" class="form-control" id="child" min="0" placeholder="Number of children">
+                                </div>
+                            </div>
+                                <div class="mt-3">
+                                    <label for="comment" class="form-label">Extra Comment</label>
+                                    <textarea class="form-control" id="comment" rows="4" placeholder="Any additional information..."></textarea>
+                                </div>
+                                <div class="d-grid mt-4">
+                                    <button type="submit" class="book-btn">BOOK NOW!</button>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="container my-5">
+                        <h3 class="text-center mb-4 fw-bold">Book This Tour<hr></h3>
+        
+                        <div class="card text-center" style="padding: 15px">
+                            <h4 class="text-center "><bold>Ready To Explore More?</bold><hr></h4>
+                            <p class="text center">Our Epedition Experts Are Ready To Start Creating Your Dream African Adventure.! </p>
+                            <img src="C:\Users\User\Documents\tourism experts.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Profile" style="width: 150px; height: 150px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">Memories Made Here</p>
+                                <button type="submit" class="book-btn">Contant</button>
+                             
+                            </div> 
+                        </div>
+            
+                        <div class="card text-center" style="margin-top: 10px; padding:15px;">
+                            <h4 class="text-center "><bold>Our Promises</bold><hr></h4>
+                            <p class="text-center" style="padding:20px">Each Of our Safari tours is planned based on our experience and your wishes.Authentic and sustainable travel is especially important to us.<br></p>
+                            <p class="text-center" style ="padding:20px">We therefore do not sell anything that we have not experienced ourselves and found to be good.We convice ourselves firsthand in order to make unforgetable adventure in the heart of Africa possible for you.<br></p>
+                            <p class="text-center" style ="padding:20px">We are committed to more responsibility and sustainability in tourism </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+    <footer style="background:rgba(101, 67, 33)"; class= "text-white pt-4">
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase fw-bold" class="text-white">Munirah Travel & Tours</h5>
+        <p>
+          Discover unforgettable adventures with us. Explore safaris, culture, and nature with expert guides.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase fw-bold">Passionate Experts</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Booking Terms</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Responsibility</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy policy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Safari in Tanzania</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></li>
+
+
+
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Safari & Tours</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Travel Guide</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Accomodations</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Day Trips & Eco Tours</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Mount Kilimanjaro Climbing</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Zanzibar Beach Holidays</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase fw-bold">Follow Us</h5>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(210, 180, 140);">
+    © 2025 Munirah Travel & Tours
+  </div>
+</footer>
+
+
+    <script>
+        // Change navbar style on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>   
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         

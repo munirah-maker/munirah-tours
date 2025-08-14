@@ -1,0 +1,5 @@
+# Ignore all .exe and .apk files in images folder
+/images/*.exe
+/images/*.apk
+/images/bootstrap-5.3.7-dist (1)
+/bootstrap-4.0.0-dist

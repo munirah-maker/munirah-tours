@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Booking Form</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" intergrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdk2K2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+<!-- Navbar-->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top navbar-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Munirah Travel & Tours</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SAFARIS & TOURS
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="day-trip.html ">Days Trips & Tours</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="2days.html  ">2 Days Small Group Safari</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="3day.html">3 Days Short Tanzania Safari</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="4day.html">4 Days Safari Highlight</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="6day.html">6 Days Tanzania Classic Safari</a>
+                            <div class="dropdown-divider"></div>  
+                            <a class="dropdown-item" href="7day.html">7 Days Tanzania Big 5 Safari</a>
+                            <div class="dropdown-divider"></div>  
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DESTINATION
+                        </a> 
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="serengeti.html">Serengeti National Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="ngorongoro.html">Ngorongoro crates</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="lake-manyara.html">Lake Manyara National Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Tarangire.html">Tarangire Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="arusha.html">Arusha National Park</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="kilimanjaro.html">Kilimanjaro National Park</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact-us.html">CONTACT US</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- end of Navbar-->
+<!-- Hero Start -->
+  <div class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="hero-content">
+            <h1 class="text-light p-3 pb-4" style="--bs-bg-opacity: .5;">The Arusha City Night Life</h1>
+            </div>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 custom-80">
+                    <div class="p-3  text-dark"><h1>Safari & Tours Overview</h1>
+                            <h3 class="text-center">Avibrant Blend of culture and Entertainment</h3> 
+                            <p class="text-center">Arusha,known as the"Safari Capital of Tanzania," offers not only breathtaking landescapes and wildlife experinces but also a vibrant and captivating nightlife.<br></p>
+                            <p class="text-center">As the sun sets over the serengeti,this  city comes to life with the blend of culture and entertainment that entices both locals and tourists alike.<br></p>
+                            <p class="text-center">We will delve into the various aspects of Arusha's nightlife,from its bustling markets and authetic cuisine to the pulsating music and dance that fill the night air.<hr><br></p>
+                    </div>
+                    <div class="accordion" id="itineraryAccordion">
+                        <h1>Detailed Itinerary</h1>
+                        <!-- 1. Sunset Markets -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button  custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                                    The Magic of Sunset Markets
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p>the twilight hour descends, Arusha's bustling markets begin to light up with an array of colors, aromas, and sounds. The Maasai Market, one of the most famous markets in the city, offers an enchanting experience with its vibrant handicrafts, beaded jewelry, and traditional fabrics. Visitors can immerse themselves in the rich culture of the Maasai people while shopping for unique souvenirs and gifts.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Culinary Delights -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Culinary Delights After Dark
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                        <div class="accordion-body">
+                                            <p>For food enthusiasts, Arusha's night scene is a culinary delight. From street food vendors offering delicious grilled meats and mouthwatering local dishes to cozy restaurants serving international cuisine, the city caters to all taste buds. The local "Nyama Choma" is a must-try delicacy, where succulent barbecued meats are served with various side dishes, creating a symphony of flavors.</p>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- 3. Dance to the Rhythm -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Dance to the Rhythm
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                    <div class="accordion-body">
+                                        <p>When the night is young, Arusha comes alive with the infectious beats of African music. The city's nightclubs and bars offer a vibrant ambiance, where locals and tourists dance together to the rhythm of traditional Tanzanian music, along with contemporary tunes. The dance floors pulsate with energy as people move to the rhythm of "Bongo Flava" and other popular genres.</p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- 4. Cultural Shows -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        Experiencing the Cultural Shows
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                    <div class="accordion-body">
+                                        <p>Arusha's nightlife is not only about dancing but also about experiencing the richness of Tanzanian culture through mesmerizing performances. Cultural shows featuring traditional music, dance, and storytelling are organized in various venues across the city. These shows offer visitors a glimpse into the diverse heritage and history of Tanzania.</p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- 5. Stargazing -->
+                        <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                        Stargazing at Peace Memorial Museum
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                    <div class="accordion-body">
+                                        <p>For those seeking a more tranquil night experience, the Peace Memorial Museum offers an opportunity for stargazing and contemplation. The museum's serene gardens provide an ideal setting for an evening of peaceful reflection, away from the hustle and bustle of the city.</p>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <!-- 6. Local Brews -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button custom-tan" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                    A Taste of Local Brews
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p>In the heart of Arusha's nightlife, one can find an array of local bars and pubs serving authentic Tanzanian brews. From banana beer to honey mead, these traditional concoctions offer a unique and memorable drinking experience. It's a chance to engage in friendly conversations with the locals and bond over shared stories.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 custom-20">
+                    <div class="card"  style="margin-bottom: 10px; padding:25px;">
+                        <h3 class="text-center mb-4 fw-bold">Book This Tour<hr></h3>     
+                        <!--form start-->   
+                        <form>
+                            <div class="mb-3">       
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="whatsapp" class="form-label">WhatsApp</label>
+                                    <input type="text" class="form-control" id="whatsapp" placeholder="Enter WhatsApp number">
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <label for="country" class="form-label">Country</label>
+                                    <input type="text" class="form-control" id="country" placeholder="Enter country">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter city">
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <label for="adult" class="form-label">No. Adult</label>
+                                    <input type="number" class="form-control" id="adult" min="0" placeholder="Number of adults">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="child" class="form-label">No. of Child</label>
+                                    <input type="number" class="form-control" id="child" min="0" placeholder="Number of children">
+                                </div>
+                            </div>
+                                <div class="mt-3">
+                                    <label for="comment" class="form-label">Extra Comment</label>
+                                    <textarea class="form-control" id="comment" rows="4" placeholder="Any additional information..."></textarea>
+                                </div>
+                                <div class="d-grid mt-4">
+                                    <button type="submit" class="book-btn">BOOK NOW!</button>
+                                </div>
+                        </form>
+                    </div>
+
+                    
+        
+                        <div class="card text-center" style="padding: 15px">
+                            <h4 class="text-center "><bold>Ready To Explore More?</bold><hr></h4>
+                            <p class="text center">Our Epedition Experts Are Ready To Start Creating Your Dream African Adventure.! </p>
+                            <img src="C:\Users\User\Documents\tourism experts.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Profile" style="width: 150px; height: 150px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">Memories Made Here</p>
+                                <a href="#" class="book-btn">Contact</a>
+                            </div> 
+                        </div>
+            
+                        <div class="card text-center" style="margin-top: 10px; padding:15px;">
+                            <h4 class="text-center "><bold>Our Promises</bold><hr></h4>
+                            <p class="text-center" style="padding:20px">Each Of our Safari tours is planned based on our experience and your wishes.Authentic and sustainable travel is especially important to us.<br></p>
+                            <p class="text-center" style ="padding:20px">We therefore do not sell anything that we have not experienced ourselves and found to be good.We convice ourselves firsthand in order to make unforgetable adventure in the heart of Africa possible for you.<br></p>
+                            <p class="text-center" style ="padding:20px">We are committed to more responsibility and sustainability in tourism </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--footer-->
+    <footer style="background:rgba(101, 67, 33)"; class= "text-white pt-4">
+    <div class="container text-center text-md-start">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-3 mb-3">
+            <h5 class="text-uppercase fw-bold" class="text-white">Munirah Travel & Tours</h5>
+            <p>
+            Discover unforgettable adventures with us. Explore safaris, culture, and nature with expert guides.
+            </p>
+      </div>
+
+      <!-- Links -->
+        <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase fw-bold">Passionate Experts</h5>
+        <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Booking Terms</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Responsibility</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Privacy policy</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Safari in Tanzania</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Safari & Tours</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Travel Guide</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Accomodations</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tanzania Day Trips & Eco Tours</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Mount Kilimanjaro Climbing</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Zanzibar Beach Holidays</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase fw-bold">Follow Us</h5>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(210, 180, 140);">
+    © 2025 Munirah Travel & Tours
+  </div>
+</footer>
+
+
+    <script>
+        // Change navbar style on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>   
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
