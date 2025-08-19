@@ -200,49 +200,94 @@
                     <div class="card"  style="margin-bottom: 10px; padding:25px;">
                         <h3 class="text-center mb-4 fw-bold">Book This Tour<hr></h3>
                         <!--form start-->   
-                        <form>
-                            <div class="mb-3">       
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                            </div>
-                            <div class="row g-3">
+                        <form class=" row g-3 was-validated" validate>
                                 <div class="col-md-6">
-                                    <label for="email" class="form-label">Your Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    <label for="fullName" class="form-label">Full name</label>
+                                    <input type="text" class="form-control" id="fullName" required minlength="2">
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your full name.</div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="whatsapp" class="form-label">WhatsApp</label>
-                                    <input type="text" class="form-control" id="whatsapp" placeholder="Enter WhatsApp number">
+                                    <label for="email" class="form-label">email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your full name.</div>
                                 </div>
-                            </div>
-                            <div class="row g-3 mt-1">
+                           
+                               <div class="col-md-6">
+                                    <label for="contact" class="form-label">whatsapp</label>
+                                    <input type="contact" class="form-control" id="fullName" required minlength="2">
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter a valid number.</div>
+                                </div>
                                 <div class="col-md-6">
                                     <label for="country" class="form-label">Country</label>
-                                    <input type="text" class="form-control" id="country" placeholder="Enter country">
+                                    <input type="country" class="form-control" id="country" required minlength="2">
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your country name.</div>
                                 </div>
+                                
                                 <div class="col-md-6">
                                     <label for="city" class="form-label">City</label>
-                                    <input type="text" class="form-control" id="city" placeholder="Enter city">
+                                    <input type="city" class="form-control" id="city" required minlength="2">
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your full name.</div>
                                 </div>
-                            </div>
-                            <div class="row g-3 mt-1">
+                                
                                 <div class="col-md-6">
-                                    <label for="adult" class="form-label">No. Adult</label>
-                                    <input type="number" class="form-control" id="adult" min="0" placeholder="Number of adults">
+                                    <label for="number" class="form-label">No. adult</label>
+                                    <input type="number" class="form-control" id="number" required minlength="2">
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your full name.</div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="child" class="form-label">No. of Child</label>
-                                    <input type="number" class="form-control" id="child" min="0" placeholder="Number of children">
+                                    <label for="number" class="form-label">No.of child</label>
+                                    <input type="number" class="form-control" id="number" required minlength="2">
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Please enter your full name.</div>
                                 </div>
-                            </div>
-                                <div class="mt-3">
-                                    <label for="comment" class="form-label">Extra Comment</label>
-                                    <textarea class="form-control" id="comment" rows="4" placeholder="Any additional information..."></textarea>
-                                </div>
-                                <div class="d-grid mt-4">
-                                    <button type="submit" class="book-btn">BOOK NOW!</button>
-                                </div>
+                                    <div class="mt-3">
+                                        <label for="comment" class="form-label">Extra Comment</label>
+                                        <textarea class="form-control" id="comment" rows="4" value="Any additional information..." required></textarea>
+                                        <div class="invalid-feedback">please enter your comment</div>
+                                    </div>
+                                    <div class="d-grid mt-4">
+                                        <button type="submit" class="book-btn">BOOK NOW!</button>
+                                    </div>
                         </form>
+                           <script>
+                                (() => {
+                                'use strict'
+
+                                const forms = document.querySelectorAll('.needs-validation')
+
+                                forms.forEach(form => {
+                                    // On submit
+                                    form.addEventListener('submit', event => {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault()
+                                        event.stopPropagation()
+                                    }
+                                    form.classList.add('was-validated')
+                                    })
+
+                                    // Live validation (on input/blur)
+                                    form.querySelectorAll('input').forEach(input => {
+                                    input.addEventListener('input', () => {
+                                        if (input.value === '') {
+                                        input.classList.remove('is-valid', 'is-invalid')
+                                        } else if (input.checkValidity()) {
+                                        input.classList.add('is-valid')
+                                        input.classList.remove('is-invalid')
+                                        } else {
+                                        input.classList.add('is-invalid')
+                                        input.classList.remove('is-valid')
+                                        }
+                                    })
+                                    })
+                                })
+                                })()
+                            </script>
                     </div>
                     <div class="container my-5">
                         <h3 class="text-center mb-4 fw-bold">Book This Tour<hr></h3>
